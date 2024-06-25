@@ -1,0 +1,190 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    cursor: default;
+}
+.heroSection{
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    gap: 100px;
+}
+.heroLeft{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-content: center;
+}
+.heroLeft .Socials{
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+    margin-top: 125px;
+    margin-right: 50px;
+    flex-direction: column;
+}
+.heroLeft .Socials .img1{
+    transition: 0.3s;
+}
+.heroLeft .Socials .img1:hover{
+    transform: scale(1.25);
+}
+.heroLeft .Socials .img2{
+    transition: 0.3s;
+}
+.heroLeft .Socials .img2:hover{
+    transform: scale(1.25);
+}
+.heroLeft .Socials .img3{
+    transition: 0.3s;
+}
+.heroLeft .Socials .img3:hover{
+    transform: scale(1.25);
+}
+.heroRight{
+    margin-top: 80px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+.heroRight h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+.heroRight h1 span{
+    font-size: 50px;
+    color: #256eff;
+}
+.heroRight p{
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 40px;
+}
+.heroRight p span{
+    background-image: linear-gradient(90deg, #fce055 55%, #256eff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heroRight .heroAction{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-style: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.heroRight .heroConnect{
+    font-size: 20px;
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(319deg, #efd002 0.36%, #442ce0 102.06%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.heroRight .heroResume{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.heroRight .heroConnect:hover{
+    transform: scale(1.05);
+}
+.heroRight button:hover{
+    border-color: #B415FF;
+    transform: scale(1.05);
+}
+.anchorLink{
+    text-decoration: none;
+    color: white;
+}
+@media(max-width: 768px){
+    .hero{
+        flex-direction: column;
+    }
+    .heroSection{
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+    }
+    .heroLeft{
+        display: flex;
+        flex-direction: column;
+    }
+    .heroRight{
+        margin-top: -80px;
+    }
+    .heroSection .heroLeft{
+        width: 260px;
+    }
+    .heroLeft .Socials{
+        margin-right: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+        align-items: center;
+        justify-self: center;
+    }
+    .heroLeft .prof{
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+        align-items: center;
+        justify-self: center;
+    }
+    .heroLeft .Socials img{
+        width: 85px;
+        height: 85px;
+    }
+    .hero img{
+        margin-bottom: 120px;
+        width: 260px;
+    }
+    .heroRight h1{
+        text-align: center;
+        width: 100%;
+        font-size: 45px;
+    }
+    .heroRight h1 span{
+        font-size: 45px;
+    }
+    .heroRight p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .heroRight p span{
+        font-size: 20px;
+    }
+    .heroAction{
+        gap: 16px;
+        font-weight: 500;
+        margin-bottom: 50px ;
+    }
+    .heroConnect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .heroResume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+}

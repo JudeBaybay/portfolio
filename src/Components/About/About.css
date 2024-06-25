@@ -1,0 +1,99 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 80px 170px;
+    cursor: default;
+
+}
+.aboutTitle{
+    position: relative;
+}
+.aboutTitle h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.aboutSection{
+    display: flex;
+    gap: 80px;
+}
+.aboutLeft{
+    align-content: center;
+}
+.aboutLeft img{
+    border-radius: 20px;
+}
+.aboutRight{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.aboutPara{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.aboutSkills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutSkill{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+.aboutSkill:hover{
+    transform:scale(1.02);
+    transition: 0.4s;
+}
+.aboutSkill p{
+    min-width: 200px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.aboutSkill hr{
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #fce055 20%, #256eff 37%, #46237a 75%);
+}
+@media(max-width:768px){
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .aboutTitle h1{
+        font-size: 50px;
+        padding: 0;
+    }
+    .aboutSection{
+        flex-direction: column;
+    }
+    .aboutLeft{
+        display: none;
+    }
+    .aboutPara{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .aboutSkill{
+        gap: 20px;
+        align-items: center;
+    }
+    .aboutSkill p{
+        font-size: 20px;
+    }
+    .aboutSkill hr{
+        height: 6px;
+    }
+}
